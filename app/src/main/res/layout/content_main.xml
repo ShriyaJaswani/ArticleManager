@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+     android:background="@drawable/bg_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="Frequently Viewed"
+        android:layout_marginLeft="20dp"
+        android:textSize="30sp" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/lgtpink"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:text="Introduction to Java"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Category : Technology"
+                    />
+                <LinearLayout
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/java"/>
+
+                    <ScrollView
+                        android:layout_width="191dp"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:background="@color/lgtpink"
+                            android:gravity="center"
+                            android:text="Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible." />
+                    </ScrollView>
+                </LinearLayout>
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:max="5"
+                    android:min="3"
+                    android:layout_marginLeft="30dp"
+                    android:elevation="100dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/lgtblue"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:text="Introduction to kotlin"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Category : Social"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/kotlin"/>
+                    <ScrollView
+                        android:layout_width="180dp"
+                        android:layout_height="100dp">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="15dp"
+                        android:text=" Kotlin is an Android-compatible language that is concise, expressive, and designed to be type- and null-safe. It works with the Java language seamlessly, so it makes it easy for developers who love the Java language to keep using it but also incrementally add Kotlin code and leverage Kotlin libraries."
+                        android:gravity="center"/>
+                    </ScrollView>
+                </LinearLayout>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:max="5"
+                    android:min="3"
+                    android:layout_marginLeft="30dp"
+                    android:elevation="100dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:text="Flutter"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Category : Social"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/flutter"/>
+                    <ScrollView
+                        android:layout_width="180dp"
+                        android:layout_height="100dp">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="Flutter is an app SDK for building high-performance, high-fidelity apps for iOS, Android, and web (tech preview) from a single codebase. The goal is to enable developers to deliver high-performance apps that feel natural on different platforms."
+                        android:gravity="center"/>
+                    </ScrollView>
+                </LinearLayout>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:max="5"
+                    android:min="3"
+                    android:layout_marginLeft="30dp"
+                    android:elevation="100dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Social"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/lgtblue"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="Introduction to Java"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Category : Technology"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/java"/>
+                    <ScrollView
+                        android:layout_width="180dp"
+                        android:layout_height="100dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:text="Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible."
+                            android:gravity="center"/>
+                    </ScrollView>
+                </LinearLayout>
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:max="5"
+                    android:min="3"
+                    android:layout_marginLeft="30dp"
+                    android:elevation="100dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="#d0c0f0"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:text="Introduction to kotlin"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Category : Social"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/kotlin"/>
+                    <ScrollView
+                        android:layout_width="180dp"
+                        android:layout_height="100dp">
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Kotlin is an Android-compatible language that is concise, expressive, and designed to be type- and null-safe. It works with the Java language seamlessly, so it makes it easy for developers who love the Java language to keep using it but also incrementally add Kotlin code and leverage Kotlin libraries"
+                            android:gravity="center"/>
+                    </ScrollView>
+                </LinearLayout>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:max="5"
+                    android:min="3"
+                    android:layout_marginLeft="30dp"
+                    android:elevation="100dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:text="Flutter"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Category : Social"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/flutter"/>
+                    <ScrollView
+                        android:layout_width="180dp"
+                        android:layout_height="100dp">
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Flutter is an app SDK for building high-performance, high-fidelity apps for iOS, Android, and web (tech preview) from a single codebase. The goal is to enable developers to deliver high-performance apps that feel natural on different platforms."
+                            android:gravity="center"/>
+                    </ScrollView>
+                </LinearLayout>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:max="5"
+                    android:min="3"
+                    android:layout_marginLeft="30dp"
+                    android:elevation="100dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
